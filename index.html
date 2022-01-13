@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Michael Roosa Portfolio
+        </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="css/portfolio.css">
+    </head>
+
+    <body class="background">
+
+        <!--NAVBAR-->
+        <div class="navbar">
+            <a class="active" href="#home">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#github">GITHUB</a>
+            <a href="#contact">CONTACT</a>
+        </div>
+        <br>
+        <br>
+
+        <!--Background Video-->
+        <div id="home">
+            <video autoplay muted loop id="video">
+                <source src="./videos/video.mp4" type="video/mp4">
+                <!--Display if video fails to run-->
+                Your browser does not support HTML5 video.
+            </video>
+        </div>
+
+        <!--Video overlay text-->
+        <div class="video_text">
+            <h1 class="white-text">Michael Roosa's Portfolio</h1>
+            <strong>
+                <p class="center">
+                    <q>
+                        It should be the experience, that is touching. What I strive for 
+                            <br>is to make the person playing the game the director.
+                    </q>
+                    <br>- Shigeru Miyamoto.
+                    <br>
+                    <br> My name is Michael Roosa. Welcome to my portfolio website. On it, I will tell you about my background and experience.
+                    <br>
+                    <!--Working Text-->
+                    <br> Thank you for stopping by and enjoy!
+                </p>
+            </strong>
+            <!--Working quote-->
+            
+        </div>
+
+        <!--About section-->
+        <div class="Row" id="about">
+
+            <!--Left Column, About image-->
+            <div class="Column_2">
+                <img src="./images/about.jpg" alt="About Image">
+            </div>
+
+            <!--Right Column-->
+            <div class="Column_1">
+                <h1>ABOUT</h1>
+                <p>
+                    I am a game developer who loves to code! As an avid gamer, I enjoy exploring new worlds and experiencing new game mechanics
+                    <br>
+                    <br>I am a **SOON TO BE** graduate of <a href="https://www.learncodinganywhere.com/">The Tech Academy</a>'s Game Developer Bootcamp,
+                        where I trained in and experienced the following web and programming languages: C++, C#, HTML, Javascript and more. I also recieved hands
+                        on training creating projects in both Unreal Engine and Unity.
+                    <br>
+                    <br>I am a full-stack developer and would love to work with you on your project. <a href="#contact">Contact</a> me below!
+                </p>
+            </div>
+            
+        </div>
+
+        <!--Github Section-->
+        <div class="Row" id="github">
+
+            <!--Left column-->
+            <div class="Column_1">
+                <h1>GITHUB</h1>
+                <p>
+                    You can view my coding projects on my GitHub profile here:
+                    <br>
+                    <p class="center"><a href="https://github.com/mproosa1998">Michael Roosa Portfolio</a></p>
+                </p>
+            </div>
+
+            <!--Right column, Github Image-->
+            <div class="Column_2">
+                <a href="https://github.com/mproosa1998"><img src="./images/octocat.png" alt="Github Image"></a>
+            </div>
+            
+        </div>
+
+        <!--Contact Section-->
+        <div class="Row" id="contact">
+            <!--Left column, Contact Image-->
+            <div class="Column_2 Column_tall">
+                <img src="images/contact.jpg" alt="Contact Image">
+            </div>
+
+            <!--Right column-->
+            <div class="Column_1 Column_tall">
+                <h1>CONTACT</h1>
+                <form action="https://formspree.io/f/xwkyvpqq" method="post">
+                    <label>Name:</label>
+                        <input type="text" placeholder="Please enter your name here">
+                    <label>Email:</label>
+                        <input type="text" placeholder="Please enter your email here">
+                    <label>Message:</label>
+                        <input type="text" placeholder="Please write your message here">
+                        <input type="submit" placeholder="SUBMIT">
+                </form>
+            </div>
+        </div>
+                
+
+        <!--Footer-->
+        <footer>
+            <p>
+                <p class="center">Michael Roosa | &copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
+            </p>
+        </footer>
+    </body>
+</html>
