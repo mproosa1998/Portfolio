@@ -16,8 +16,10 @@
         <div class="navbar">
             <a class="active" href="#home">HOME</a>
             <a href="#about">ABOUT</a>
+            <a href="#Slideshow">SLIDESHOW</a>
             <a href="#github">GITHUB</a>
-            <a href="#contact">CONTACT</a>
+
+            <a onclick="openForm()" ondblclick="closeForm()" class="contact">CONTACT</a>
         </div>
         <br>
         <br>
@@ -49,9 +51,84 @@
                 </p>
             </strong>
             <!--Working quote-->
-            
         </div>
 
+        <!--Slideshow Section-->
+        <div id="Slideshow">
+            <div id="Slideshow_Background">
+                <div id="Slideshow_Container">
+
+                    <!--slide 1 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/slideshow/profilePic.jpg">
+                        <div class="Slideshow_text">
+                            I am availible to assist you on your project!
+                        </div>
+                    </div>
+
+                    <!--slide 2 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/slideshow/C-Cpp-Cs.jpg">
+                        <div class="Slideshow_text">
+                            I am a full-stack software developer, <br>
+                             trained in: <br>
+                             C++, C#, C,
+                        </div>
+                    </div>
+
+                    <!--slide 3 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/slideshow/html-js-css.jpg">
+                        <div class="Slideshow_text">
+                             HTML, CSS, JS,
+                        </div>
+                    </div>
+
+                    <!--slide 4 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/slideshow/python-java.jpg">
+                        <div class="Slideshow_text">
+                             The popular languages Python and Java,
+                        </div>
+                    </div>
+
+                    <!--slide 5 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/slideshow/SQL.jpg">
+                        <div class="Slideshow_text">
+                            back end develpoment, databases and SQL.
+                        </div>
+                    </div>
+
+                    <!--slide 6 of 6-->
+                    <div class="mySlides fade">
+                        <img class="Slideshow_Images" src="./images/slideshow/contact.jpg">
+                        <div class="Slideshow_text">
+                            <a class="white-text contact" onclick="openForm()">Contact me now!</a>
+                        </div>
+                    </div>
+
+                    <!--Prev/Next Buttons-->
+                    <a class="Previous" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="Next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                
+                    
+                <br> <!-- Adds a space between the slideshow images and the dots -->
+
+                <!-- Slideshow dots (these are another way for users to navigate through the slideshow) -->
+                <div style="text-align: center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span> 
+                    <span class="dot" onclick="currentSlide(4)"></span> 
+                    <span class="dot" onclick="currentSlide(5)"></span> 
+                    <span class="dot" onclick="currentSlide(6)"></span> 
+                </div>
+
+                <br>
+            </div>
+        </div>
         <!--About section-->
         <div class="Row" id="about">
 
@@ -97,23 +174,20 @@
         </div>
 
         <!--Contact Section-->
-        <div class="Row" id="contact">
+        <div id="contact">
+            <button onclick="openForm()" class="Pop_Up_Button">CONTACT</button>
             <!--Left column, Contact Image-->
-            <div class="Column_2 Column_tall">
-                <img src="images/contact.jpg" alt="Contact Image">
-            </div>
-
-            <!--Right column-->
-            <div class="Column_1 Column_tall">
-                <h1>CONTACT</h1>
-                <form action="https://formspree.io/f/xwkyvpqq" method="post">
+            <div class="form-popup" id="myForm">
+                <form action="https://formspree.io/f/xwkyvpqq" method="post" class="form-container">
                     <label>Name:</label>
                         <input type="text" id="Name" name="Name" placeholder="Please enter your name here" required>
                     <label>Email:</label>
                         <input type="text" id="Email" name="Email" placeholder="Please enter your email here" required>
                     <label>Message:</label>
                         <input type="text" id="Message" name="Message" placeholder="Please write your message here" required>
-                        <input type="submit" placeholder="SUBMIT">
+                        
+                        <button type="submit" class="btn">SUBMIT</button>
+                        <button type="button" class="btn cancel" onclick="closeForm()">CLOSE</button>
                 </form>
             </div>
         </div>
@@ -125,5 +199,6 @@
                 <p class="center">Michael Roosa | &copy Prosper Consulting Inc., <a href="https://www.learncodinganywhere.com/" target="_blank">The Tech Academy</a></p>
             </p>
         </footer>
+        <script src="js/portfolio.js" async></script>
     </body>
 </html>
