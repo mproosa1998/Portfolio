@@ -311,6 +311,12 @@ footer{
     background-color: #f2f2f2;
 }
 
+@media screen and (max-width: 576px) {
+    .Column_1 {
+        overflow: auto;
+    }
+}
+
 .Column_2{
     float: left;
     width: 50%;
