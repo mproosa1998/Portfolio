@@ -311,7 +311,11 @@ footer{
     background-color: #f2f2f2;
 }
 
-@media screen and (max-width: 576px) {
+.About_Text{
+    font-size: 1.25vw;
+}
+
+@media screen and (max-width: 1000px) {
     .Column_1 {
         overflow: auto;
     }
